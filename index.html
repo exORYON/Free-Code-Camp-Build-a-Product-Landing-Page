@@ -12,8 +12,7 @@
 
 <body>
   <header id="header">
-      <img src="images/logo.png" alt="Company logo" id="header-img">
-
+    <a href="#top" id="logo-link"><img src="images/logo.png" alt="Company logo" id="header-img"></a>
       <nav id="nav-bar">
         <ul>
           <a href="#solutions-anchor" class="nav-link"><li>Solutions</li></a>
@@ -21,36 +20,143 @@
           <a href="#contact-us-anchor" class="nav-link"><li>Contact us</li></a>
         </ul>
       </nav>
-  </header>
+    </header>
+  <div id="top"></div>
 
   <main>
-    <section class="company-info">
+    <section class="company-info" >
         <h2 class="company-info-text">Efficient and Data-Driven Building Automation</h2>
         <iframe width="40%" height="425" src="https://www.youtube.com/embed/prs9a5j4xuA" allowfullscreen id="video"></iframe>
-    </section><br>
+    </section>
 
     <div class="content">
-      <section></section>
+      <section class="product-container">
+        <img src="images/product.png" alt="Company product">
+        <div class="product-container___inner">
+          <div class="product-container___inner-text">
+            <span class="header-text">New product</span>
+            <h4>BACwALL 437 FCU</h4>
+          <ul>
+            <li><div class="list-item"><div class="circle"></div>Fully Reprogrammable FCU BACnet Room Controller</div></li>
+            <li><div class="list-item"><div class="circle"></div>Features Rich & Cost Effective</div></li>
+          </ul>
+            <span class="more-link">View product</span>
+          </div>
+        </div>
+      </section>
 
+      <section class=solutions-container>
+        <div class="text-container">
+          <h2 id="solutions-anchor">Solutions</h2>
+          <div class="text-container___inner">
+            <span class="solutions-description">Find the combination<br>that suits your project</span>
+            <span class="more-link">Learn more</span>
+          </div>
+        </div>
 
+        <div class="card-container">
+          <div class="card">
+              <img src="images/card1.png" alt="Strato light commercial">
+              <div class="image-description">
+                <span>Extremely Simple</span>
+                <hr>
+                <span>Compatible with Strato Enterprise</span>
+                <span class="ordinary-link">Learn more</span>
+              </div>
+          </div>
+          <div class="card">
+            <img src="images/card2.png" alt="Strato enterprise">
+            <div class="image-description">
+              <span>Flexible and Powerful Software</span>
+              <hr>
+              <span>Integrates with Strato Light Commercial</span>
+              <span class="ordinary-link">Learn more</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card3.png" alt="Starto light services">
+            <div class="image-description">
+              <span>Alerting and Backup</span>
+              <hr>
+              <span>Energy Efficiency Services</span>
+              <span class="ordinary-link">Learn more</span>
+            </div>
+          </div>
+        </div>
+      </section>
+ <!--
+      <section class="additional-info">
+        <div class="info-block-left">
+          <span class="additional-header">Don’t know what kind<br> of solutions you<br>need?</span>
+          <span class="more-link">Compare the solutions</span>
+        </div>
 
+        <div class="info-block-right">
+          <div class="inner-block">
+            <div class="inner-header-text">Distributors</div>
+          </div>
+            <div class="inner-block">
+              <div class="inner-header-text">System Integrators</div>
+              <span class="inner-link">Strato Enterprise</span>
+              <span class="inner-link">Strato Cloud Services</span>
+            </div>
+          <div class="inner-block">
+            <div class="inner-header-text">Energy Service company/MSI</div>
+            <span class="inner-link">Strato Enterprise</span>
+            <span class="inner-link">Strato Cloud Services</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="stories">
+        <div class="image-container">
+          <img src="images/building.jpg" alt="Success building example">
+        </div>
+        
+        <div class="success-stories">
+          <div class="stories-inner">
+            <div class="stories-header">Success Stories</div>
+              <div class="stories-description">Hundreds of projects delivered in 10 years +. All types of<br> buildings will benefit from a Strato Automation™ solution.</div>
+            <div class="more-link">Our collaborations</div>
+          </div>
+        </div>
+      </section>
 
+      <section class="products">
+        <div class="products-block-left">
+          <div class="products-header">For each solution, its<br> range of products</div>
+          <span class="more-link-black" id="products-anchor">Products list</span>
+        </div>
 
+        <div class="products-block-right">
+          <img src="images/products.png" alt="Products range">
+        </div>
+      </section>
 
-      <h2 id="solutions-anchor">Solutions</h2>
-      <h2 id="products-anchor">Products</h2>
-      <h3 id="contact-us-anchor">Contact us</h3>
-  
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="name">Your name:</label>
-          <input type="text" id="name" name="name" placeholder="James">
-        <label for="company">Your company:</label>
-          <input type="text" id="company" name="company" placeholder="Strato Automation">
-        <label for="email">Your email:</label>
-          <input type="email" id="email" name="email" placeholder="exmple@mail.com" required>
-        <input type="submit" id="submit" value="OK">
-      </form>
+      <section class="contact-us">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="form-container">
+            <div class="form-labels">
+              <label for="name">Your name:</label>
+              <label for="company">Your company:</label>
+              <label for="email">Your email:</label>
+            </div>
+
+            <div class="form-inputs">
+              <input type="text" id="name" name="name" placeholder=" James" class="user-info">
+              <input type="text" id="company" name="company" placeholder=" Strato Automation" class="user-info">
+              <input type="email" id="email" name="email" placeholder=" exmple@mail.com" required class="user-info">
+            </div>
+          </div>
+            <input type="submit" id="submit" value="OK">
+        </form>
+        
+        <div class="contact-us-image-container">
+          <h3 id="contact-us-anchor">Contact us</h3>
+          <img src="images/form.png" alt="Contact form logo">
+          <span class="more-link-black">About us</span>
+        </div>
+      </section> -->
     </div>
   </main>
 
